@@ -12,7 +12,3 @@ function a(x,y) {
        return a((x-1),a(x,(y-1))); 
     }
 }
-
-console.log(a(1,10));
-console.log(a(2,4));
-console.log(a(3,3));
