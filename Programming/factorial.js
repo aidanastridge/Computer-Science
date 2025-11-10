@@ -12,8 +12,4 @@ function factorial(n) {
     return factIter(1,1,n);
 }
 
-function factIter(product,counter,max_count) {
-    return counter > max_count ? product : factIter(counter*product,counter+1,max_count);
-}
-
 console.log(factorial(5));
