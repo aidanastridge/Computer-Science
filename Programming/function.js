@@ -5,7 +5,7 @@ function f(n) {
       return f(n-1)+2*f(n-2)+3*f(n-3);
 }
 
-console.log(f(3));
+console.log(f(4));
 
 function f(n) {
     fIter(3,n);
