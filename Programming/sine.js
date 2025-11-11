@@ -15,5 +15,4 @@ function sine(angle) {
 }
 
 
-
 console.log(sine(12.15));
