@@ -24,3 +24,7 @@ function evenCheck(n) {
     return n % 2 === 0;
 }
 
+function multiply(a,b) {
+    return b === 0 ? 0 :  multiply(a,(b-1)) + a;
+}
+
