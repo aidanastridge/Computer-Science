@@ -24,6 +24,3 @@ function evenCheck(n) {
     return n % 2 === 0;
 }
 
-function fastExpt() {
-    
-}
