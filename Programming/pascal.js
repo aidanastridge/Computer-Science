@@ -6,4 +6,4 @@ function pascal(n,k) {
     }
 }
 
-console.log(pascal(4,2));
+
