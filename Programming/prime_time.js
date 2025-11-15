@@ -32,14 +32,15 @@ function prime(n) {
 
 function timePrimeTest() {
     console.log("n: ${n}");
-    return startPrimeTest(n,process.uptime());
+    return startPrimeTest(n,performance.now());
 }
 
 function startPrimeTest(n, startTime) {
-     if (prime(n)) {
-        return reportPrime(process.uptime()-startTime);
-     }
+    if (prime(n)) {
+        return reportPrime(performance.now() - startTime);
+    }
 }
+
 
 function reportPrime(elapsedTime) {
     console.log(" *** ");
