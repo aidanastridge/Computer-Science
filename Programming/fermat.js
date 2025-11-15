@@ -35,3 +35,4 @@ function fastPrime(n, times) {
     }
 
 }
+

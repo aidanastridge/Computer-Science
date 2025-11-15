@@ -26,3 +26,4 @@ function divides(a,b) {
     return b % a === 0;
 }
 
+console.log(smallestDivisor(19999));
