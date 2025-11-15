@@ -24,3 +24,15 @@ function fermatTest(n) {
     }
 }
 
+function fastPrime(n, times) {
+    if (times === 0) {
+        return true;
+    }
+    else if (fermatTest(n)) {
+        return fastPrime(n,(times - 1));
+    }
+    else {
+        return false;
+    }
+
+}
