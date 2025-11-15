@@ -18,10 +18,9 @@ function expmod(base,exp,m) {
 
 function fermatTest(n) {
     function tryIt(a) {
-       if (expmod (a,n,n) === a) {
-        return 
+        return expmod( a, n, n) === a;
         }
-    }
+        return tryIt(Math.floor(Math.random() * (n - 1)) + 1);
 }
 
 function fastPrime(n, times) {
