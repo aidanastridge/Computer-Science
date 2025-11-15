@@ -37,7 +37,7 @@ function timePrimeTest() {
 
 function startPrimeTest(n, startTime) {
      if (prime(n)) {
-        reportPrime(process.uptime()-startTime);
+        return reportPrime(process.uptime()-startTime);
      }
 }
 
