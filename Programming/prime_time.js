@@ -1,0 +1,4 @@
+function timePrimeTest() {
+    return newline;
+
+}

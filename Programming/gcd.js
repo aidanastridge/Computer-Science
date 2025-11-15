@@ -26,4 +26,8 @@ function divides(a,b) {
     return b % a === 0;
 }
 
+function prime(n) {
+    return n === smallestDivisor(n);
+}
+
 console.log(smallestDivisor(19999));
