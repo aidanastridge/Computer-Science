@@ -53,4 +53,14 @@ function piSum(a, b) {
   );
 }
 
-
+function integral(f, a, b, dx) {
+  return sum(
+    f,
+    dx / 2.0 + a,
+    (x) => {
+      return x + dx;
+    },
+    b,
+    dx,
+  );
+}
