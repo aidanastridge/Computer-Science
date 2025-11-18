@@ -64,3 +64,20 @@ function integral(f, a, b, dx) {
     dx,
   );
 }
+
+function square(x) {
+  return x * x;
+}
+function f(x, y) {
+  function fHelper(a, b) {
+    return a * b + y * b + x * square(a);
+  }
+  return fHelper(1 + x * y, 1 - y);
+}
+
+function f(x, y) {
+  (a, b) => {
+    return a * b + y * b + x * square(a);
+  };
+  return fHelper(1 + x * y, 1 - y);
+}
