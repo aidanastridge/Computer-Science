@@ -81,3 +81,8 @@ function f(x, y) {
   };
   return fHelper(1 + x * y, 1 - y);
 }
+
+(() => {
+  let x = 3;
+  return x + (x + x * 10) + x;
+})();
