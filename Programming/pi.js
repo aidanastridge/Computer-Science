@@ -86,3 +86,14 @@ function f(x, y) {
   let x = 3;
   return x + (x + x * 10) + x;
 })();
+
+let x = 2;
+(() => {
+  let inner_x = 3;
+  const y = x + 2;
+  return inner_x * y;
+})();
+
+function f(g) {
+  let g = 2;
+}
